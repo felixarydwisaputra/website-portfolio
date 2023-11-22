@@ -32,3 +32,14 @@ tl.to(".main", {
     margin: "10% 0"
 },'d')
 
+
+gsap.to('.hero',{
+    opacity: 0,
+    scrollTrigger:{
+        trigger: ".hero",
+        scrub: .3,
+        start: "top top",
+    }
+})
+
+
