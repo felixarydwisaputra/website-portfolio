@@ -593,6 +593,8 @@ a{
 }
 
 .portfolio .top h1{
+    position: absolute;
+    bottom: 2%;
     font-size: 15rem;
     font-family: var(--biasa);
     font-weight: bold;
@@ -622,6 +624,7 @@ a{
 }
 
 .portfolio .bottom h1{
+    position: absolute;
     font-size: 16rem;
     font-family: var(--tebal);
     letter-spacing: 10px;
@@ -1045,7 +1048,6 @@ footer{
         width: 100%;
         height: 22rem;
         background-color: white;
-        padding-bottom: 2rem;
         transform: scaleY(0);
         transform-origin: top;
         transition: .3s;
@@ -1102,13 +1104,16 @@ footer{
 
     .hero .content .big-title h1{
         line-height: 1;
+    -webkit-text-stroke: 2px black;
+
     }
     
     .hero .content .big-title .back{
         top: -4px;
         margin-left: 6px;
-    }
+        -webkit-text-stroke: 2px black;
 
+    }
 
     .hero .content .caption h3{
         -webkit-text-stroke: .2px white;
@@ -1194,6 +1199,7 @@ footer{
 
     .about .content .about-img{
         margin-bottom: 2rem;
+        opacity: 0;
     }
 
     .about::after{

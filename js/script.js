@@ -24,8 +24,14 @@ tl.to(".main", {
 .to(".top",{
     top:"-50%",
 },'c')
+.to(".top h1",{
+    top:"70%",
+},'c')
 .to(".bottom",{
     bottom:"-50%",
+},'c')
+.to(".bottom h1",{
+    bottom:"70%",
 },'c')
 .to(".main .content",{
     delay: -0.4,
@@ -40,6 +46,46 @@ gsap.to('.hero',{
         scrub: .3,
         start: "top top",
     }
+})
+
+let tl2 = gsap.timeline({scrollTrigger:{
+    trigger: '.hero',
+    scrub: 3,
+    start: "top top",
+}})
+
+tl2.to('.big-title',{
+    y: '30rem',
+}, 'a')
+.to('.caption',{
+    opacity:0,
+    y: '20rem',
+}, 'a')
+.to('.button',{
+    opacity:0,
+    y: '15rem',
+}, 'a')
+
+
+
+// Split typr
+const splitText = document.querySelector('.split')
+
+const text = new SplitType(splitText, {types: 'chars'})
+
+gsap.from(text.chars,{
+    scrollTrigger: {
+        trigger: splitText,
+        star: "top 80%",
+        end: "top 40%",
+        markers: true,
+        toggleActions: 'play play reverse reverse',
+    },
+    scaleY: 0,
+    transformOrigin: "top",
+    y: -20,
+    stagger: 0.2,
+    duration: 0.3,
 })
 
 
