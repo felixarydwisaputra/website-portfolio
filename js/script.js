@@ -78,7 +78,6 @@ gsap.from(text.chars,{
         trigger: splitText,
         star: "top 80%",
         end: "top 40%",
-        markers: true,
         toggleActions: 'play play reverse reverse',
     },
     scaleY: 0,

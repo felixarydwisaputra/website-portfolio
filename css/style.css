@@ -275,6 +275,7 @@ a{
     position: relative;
 }
 
+
 .hero .content .big-title h1{
     font-size: 7rem;
     color: var(--first);
@@ -297,6 +298,9 @@ a{
     text-align: center;
     color: var(--third);
     z-index: 2;
+    animation: scale 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
 }
 
 .hero .content .caption h3{
@@ -418,7 +422,6 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: green; */
 }
 
 .about .content .about-img .kotak:nth-child(1){
@@ -1109,8 +1112,8 @@ footer{
     }
     
     .hero .content .big-title .back{
-        top: -4px;
-        margin-left: 6px;
+        top: -3px;
+        margin-left: 4px;
         -webkit-text-stroke: 2px black;
 
     }
@@ -1199,7 +1202,6 @@ footer{
 
     .about .content .about-img{
         margin-bottom: 2rem;
-        opacity: 0;
     }
 
     .about::after{
@@ -1370,6 +1372,15 @@ footer{
     100%{
         opacity: 0;
     }
-    
+}
+
+@keyframes scale{
+    0%{
+        scale: 1;
+    }
+
+    100%{
+        scale: .95;
+    }
 }
 
