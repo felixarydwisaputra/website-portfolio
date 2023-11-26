@@ -1148,10 +1148,10 @@ footer{
 
     .hero .content .big-title h1{
         line-height: 1;
-    -webkit-text-stroke: 1px black;
-
-    }
+        -webkit-text-stroke: .5px black;
     
+}
+
     .hero .content .big-title .back{
         top: -3px;
         margin-left: 4px;
