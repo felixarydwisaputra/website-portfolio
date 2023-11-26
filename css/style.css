@@ -494,6 +494,11 @@ a{
     letter-spacing: 2px;
 }
 
+.about .content .about-content .tech-stack img{
+    width: 7%;
+    margin-left: 1rem;
+}
+
 /* portfolio */
 .portfolio .top .box:nth-child(3){
     position: absolute;
@@ -779,7 +784,7 @@ a{
     width: 100%;
     height: 90vh;
     background: var(--third);
-    padding: 8rem 0;
+    padding: 10rem 15% 2rem 15%;
 }
 
 .contact .container{
@@ -810,7 +815,7 @@ a{
     background-color: var(--bg);
     z-index: 0;
     right: 5%;
-    bottom: 15%;
+    bottom: 25%;
     box-shadow: 1px 1px 5px black;
 }
 
@@ -862,6 +867,37 @@ footer{
 
 
 /* MEDIA QUERY */
+/* Laptop */
+@media (max-width: 1280px){
+    html{
+        font-size: 72.5%;
+    }
+
+    .hero .circle-arrow{
+        width: 450px;
+        height: 450px;
+        bottom: -10%;
+        right: -5%;
+    }
+
+    .mynavbar .nav-logo{
+        line-height: .9;
+        letter-spacing: 4px;
+        text-shadow: 1px 1px 2px var(--first);
+    }
+
+    .hero .content .big-title .back{
+        top: -4px;
+        margin-left: 2px;
+        -webkit-text-stroke: 2px black;
+    }
+
+    .hero .content .button .front:hover{
+        transform: translate(-6px, -6px);
+    }
+}
+
+
 /* Tablet */
 @media (max-width: 900px){
     html{
@@ -885,6 +921,7 @@ footer{
 
     .hero .content .caption{
         text-align: start;
+        animation: none;
     }
 
     .hero .content .caption p{
@@ -1030,7 +1067,7 @@ footer{
 /* Handphone */
 @media (max-width: 450px){
     html{
-        font-size: 45%;
+        font-size: 43%;
     }
 
     /* navbar */
@@ -1058,6 +1095,10 @@ footer{
 
     .mynavbar .navbar-nav.active{
         transform: scaleY(1);
+    }
+
+    .mynavbar .nav-extra{
+        display: block;
     }
 
     .mynavbar .nav-extra i{
@@ -1115,7 +1156,6 @@ footer{
         top: -3px;
         margin-left: 4px;
         -webkit-text-stroke: 2px black;
-
     }
 
     .hero .content .caption h3{
@@ -1131,12 +1171,16 @@ footer{
         font-size: 1.2rem;
     }
 
+    .hero .content .button .btn{
+        border: 1.5px solid black;
+    }
+
     .hero .content .button .front{
-        transform: translate(-5px, -5px);
+        transform: translate(-4px, -4px);
     }
 
     .hero .content .button .front:hover{
-        transform: translate(-5px, -5px);
+        transform: translate(-4px, -4px);
     }
 
     .hero .circle-arrow{
