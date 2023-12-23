@@ -1,7 +1,7 @@
 :root{
-    --first: rgb(229, 255, 0);
+    --first: rgb(145, 255, 0);
     --third: #e7e7e7;
-    --bg: #2c2c2c;  
+    --bg: #242424;  
 
     /* --first: #202020;
     --third: #e7e7e7;
@@ -45,7 +45,7 @@ a{
 .mynavbar{
     display: flex;
     justify-content: space-between;
-    padding: 1.7rem 20%;
+    padding: 1rem 20%;
     background-color: var(--bg);
     position: fixed;
     top: 0;
@@ -337,7 +337,7 @@ a{
 
 .hero .content .button .back{
     padding: 1.35rem 9.8rem;
-    background: linear-gradient(to right, rgb(255, 255, 156), yellow);
+    background: linear-gradient(to right, rgb(241, 255, 223), rgb(145, 255, 0));
     color: black;
     border: 2px solid black;
     z-index: 0;
@@ -735,15 +735,6 @@ a{
     box-shadow: 1px 1px 10px rgba(0, 0, 0, .6);
     border-radius: 15px;
     overflow: hidden;
-}
-
-.portfolio .main .container-fluid .carousel .big-img{
-    filter: grayscale(1);
-    transition: .6s;
-}
-
-.portfolio .main .container-fluid .carousel .big-img:hover{
-    filter: grayscale(0);
 }
 
 .portfolio .main .container-fluid .carousel .carousel-caption{
